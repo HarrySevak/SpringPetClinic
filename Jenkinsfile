@@ -7,7 +7,7 @@ pipeline {
         stage('chckout') {
             steps {
                 git credentialsId: 'ae6b5a8b-878e-4311-83bb-45d0d35e2550', 
-                git branch: 'main', url: 'https://github.com/HarrySewak/spring-petclinic.git'
+                branch: 'main', url: 'https://github.com/HarrySewak/spring-petclinic.git'
             }
         }
         stage('build') {
